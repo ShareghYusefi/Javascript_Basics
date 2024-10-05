@@ -51,3 +51,26 @@ console.log("Increment", x++); // 10
 console.log("Increment", x); // 11
 console.log("Increment", ++y); // 16
 // decrement operator works the same way but decreases the value
+
+// Comparison Operators - ==, ===, !=, !==, >, <, >=, <=
+var a = 10;
+var b = 20;
+
+// == - checks if the values are equal
+// === - checks if the values and data types are equal
+console.log("Equal to: ", a == b); // false
+console.log("Equal to 10: ", a == 10); // true
+// data types are different for below comparison
+console.log("Equal to '10': ", a === "10"); // false
+
+// ! is the negation operator - flips the value
+console.log("negaation of true: ", !true); // false
+console.log("a != b: ", a != b); // true
+// a is not equal to b and the data types are different
+console.log("a !== b: ", a !== b); // true
+
+// >, <, >=, <=
+console.log("Greater than: ", a > b); // false
+console.log("Less than: ", a < b); // true
+console.log("Greater than or equal to: ", a >= b); // false
+console.log("Less than or equal to: ", a <= b); // true
