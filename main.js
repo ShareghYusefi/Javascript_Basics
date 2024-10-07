@@ -89,3 +89,28 @@ console.log("OR: ", a > b || b < c); // true
 
 // NOT - flips the value
 console.log("!: ", !(c == 30)); // false
+
+// String Manipulation
+var firstname = "Sharegh";
+var lastname = "Yusefi";
+
+// string concatenation - combining two strings
+var fullname = firstname + " " + lastname;
+console.log("Fullname: ", fullname);
+// using concat method
+var fullName2 = firstname.concat(" ", lastname);
+console.log("Fullname2: ", fullName2);
+// using template literals
+var fullName3 = `${firstname} ${lastname}`;
+console.log("Fullname3: ", fullName3);
+
+// String Methods
+// 1. length - returns the length of the string
+console.log("Length: ", firstname.length);
+// 2. toUpperCase - converts the string to uppercase
+console.log("Uppercase: ", firstname.toUpperCase());
+// 3. toLowerCase - converts the string to lowercase
+
+// Strings are zero indexed like arrays
+// 4. indexOf - returns the index of the first occurence of the character
+console.log("Lowercase: ", firstname.indexOf("a"));
