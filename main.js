@@ -114,3 +114,80 @@ console.log("Uppercase: ", firstname.toUpperCase());
 // Strings are zero indexed like arrays
 // 4. indexOf - returns the index of the first occurence of the character
 console.log("Lowercase: ", firstname.indexOf("a"));
+
+// Creating Arrays
+var cars = ["BMW", "Audi", "Mercedes"];
+console.log("Cars: ", cars);
+
+var fruit = new Array("Apple", "Banana", "Mango");
+console.log("Fruit: ", fruit);
+
+// Arrays are zero indexed
+// Accessing elements in an array using index of value
+console.log("First Car: ", cars[0]);
+
+// Assigning a new value to an element in an array
+cars[0] = "Toyota";
+console.log("Assigned First Car: ", cars[0]);
+
+// Adding a new element to the end of the array
+cars.push("Honda");
+console.log("Added Car: ", cars);
+
+// Adding an element to beginning of the array
+var newLengthOfCar = cars.unshift("Ford");
+console.log("Added Car to Beginning: ", cars);
+console.log("New Length of Car: ", newLengthOfCar);
+
+// Removing the last element from the array
+var lastElementOfCars = cars.pop();
+console.log("Removed Car: ", cars);
+console.log("Last Element of Cars: ", lastElementOfCars);
+
+// Removing the first element from the array
+var removedFirstElementOfCars = cars.shift();
+console.log("Removed First Car: ", cars);
+console.log("Removesd First Element of Cars: ", removedFirstElementOfCars);
+
+// splice - removes elements from the array
+// splice(index, number of elements to remove)
+var deletedFruitUsingSplice = fruit.splice(1, 1);
+console.log("Removed Fruit: ", fruit);
+console.log("Deleted Fruit using Splice: ", deletedFruitUsingSplice);
+
+// splice - adding elements to the array
+// splice(index, number of elements to remove, element1, element2, ...)
+var addedFruitUsingSplice = fruit.splice(1, 0, "Grapes", "Pineapple");
+console.log("Added Fruit: ", fruit);
+
+// sort - sorts the elements in the array by default in ascending order
+var sortedFruit = fruit.sort();
+console.log("Sorted Fruit: ", sortedFruit);
+
+// reverse - reverses the order of the elements in the array
+var reversedFruit = fruit.reverse();
+console.log("Reversed Fruit: ", reversedFruit);
+
+// slice - returns a copy of the array
+// end index is not included
+var slicedFruit = fruit.slice(0, 2);
+console.log("Sliced Fruit: ", slicedFruit);
+
+// map method - iterates over each item in the array and performs an operation
+var number = [1, 4, 9, 16];
+console.log("Numbers: ", number);
+
+var squareOfNumbers = number.map(Math.sqrt);
+console.log("Square of Numbers: ", squareOfNumbers);
+
+// length - returns the length of the array
+console.log("Length of Number: ", number.length);
+
+// 2D Array
+var matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
+
+console.log("Matrix: ", matrix);
+console.log("First Element: ", matrix[0][1]); // 2
