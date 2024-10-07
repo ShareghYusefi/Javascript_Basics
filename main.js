@@ -74,3 +74,18 @@ console.log("Greater than: ", a > b); // false
 console.log("Less than: ", a < b); // true
 console.log("Greater than or equal to: ", a >= b); // false
 console.log("Less than or equal to: ", a <= b); // true
+
+// Logical Operators - AND (&&), OR (||), NOT (!)
+var c = 30;
+
+// AND - returns true if both conditions are true
+console.log("AND: ", a < b && b < c); // true
+console.log("AND: ", a > b && b < c); // false
+
+// OR - returns true if one of the conditions is true
+console.log("OR: ", a < b || b < c); // true
+console.log("OR: ", a > b || b < c); // true
+// In OR operator if first condition is true, it does not check the second condition
+
+// NOT - flips the value
+console.log("!: ", !(c == 30)); // false
