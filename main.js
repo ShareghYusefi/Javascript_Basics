@@ -191,3 +191,17 @@ var matrix = [
 
 console.log("Matrix: ", matrix);
 console.log("First Element: ", matrix[0][1]); // 2
+
+// Function Declaration
+// A function is a block of code that performs a specific task
+// Syntax: function functionName(parameters) { code to be executed }
+// functions return a value using the return keyword
+
+function sum(a, b) {
+  return a + b;
+}
+
+// calling the function
+var result = sum(10, 20);
+
+console.log("Sum: ", result);
