@@ -52,6 +52,13 @@ console.log("Increment", x); // 11
 console.log("Increment", ++y); // 16
 // decrement operator works the same way but decreases the value
 
+// Compound Assignment Operators - +=, -=, *=, /=, %=
+console.log("+=", (x += 7)); // x = x + 7
+console.log("-=", (y -= 5)); // y = y - 5
+console.log("*=", (x *= 2)); // x = x * 2
+console.log("/=", (y /= 3)); // y = y / 3
+console.log("%=", (x %= 3)); // x = x % 3
+
 // Comparison Operators - ==, ===, !=, !==, >, <, >=, <=
 var a = 10;
 var b = 20;
