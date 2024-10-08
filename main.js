@@ -212,3 +212,84 @@ function sum(a, b) {
 var result = sum(10, 20);
 
 console.log("Sum: ", result);
+
+// Conditional Statements
+// if, else if, else
+// Syntax: if (condition) { code to be executed }
+// condition is truthy or falsy value
+// In javascript, 0, null, undefined, NaN, "" are falsy values
+// all other values are truthy values
+
+var age = 9;
+if (age >= 21) {
+  console.log("You can drink alcohol");
+} else if (age >= 18) {
+  console.log("You can vote");
+} else {
+  console.log("You are a child");
+}
+
+// Switch Statement
+// Syntax: switch (expression) { case value: code to be executed }
+
+var day = "Tuesday";
+
+// This is used to compare the value of a variable to multiple values
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday");
+    break; // break is used to exit the switch statement
+
+  case "Tuesday":
+    console.log("Today is Tuesday");
+    break;
+
+  case "Wednesday":
+    console.log("Today is Wednesday");
+    break;
+
+  default:
+    console.log("Today is not a weekday");
+}
+
+// Loops
+// for loop
+// Syntax: for (initialization; condition; increment/decrement) { code to be executed }
+
+for (var i = 0; i < 5; i++) {
+  if (i === 3) {
+    continue; // skip the current iteration, but continue with the next iteration
+  }
+
+  console.log("i: ", i);
+}
+
+// while loop
+// Syntax: while (condition) { code to be executed }
+// initialize a variable
+var j = 0;
+while (j < 5) {
+  // condition
+  console.log("j: ", j); // code to be executed
+  j++; // increment
+}
+
+// do while loop
+// Syntax: do { code to be executed } while (condition)
+// do while loop executes the code block once before checking the condition
+var k = 0;
+do {
+  console.log("k: ", k);
+  k++;
+} while (k < 5);
+
+// iterating over an array using for loop
+// for loop
+var fruits = ["Apple", "Banana", "Mango", "Grapes"];
+
+for (var fruit of fruits) {
+  if (fruit === "Mango") {
+    break; // exit the loop, does not execute the next iteration
+  }
+  console.log("Fruit: ", fruit);
+}
